@@ -24,7 +24,7 @@
             <!-- Page Heading -->
             <header class="bg-white shadow">
                 <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                    {{ $header }}
+
                 </div>
             </header>
 
@@ -44,10 +44,19 @@
 
                     </div>
 
-                    <div class="col-md-8">
+                    <div class="col-md-8 my-5">
 
                         <main>
-                            {{ $slot }}
+
+                            <div class="d-flex justify-content-end">
+
+                            <a href="{{ route('category.create') }}" class="btn btn-success float-end">Add Categories</a>
+
+                            </div>
+
+                            <div class="card-header my-2">Categories</div>
+
+
                         </main>
 
                     </div>
