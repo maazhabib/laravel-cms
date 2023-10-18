@@ -15,4 +15,4 @@ Route::get('/dashboard', function () {
 require __DIR__.'/auth.php';
 
 
-Route::resource('category' , CategoriesController::class );
+Route::resource('category' , CategoriesController::class);
