@@ -39,11 +39,13 @@ class CategoriesController extends Controller
         $this->validate($request , [
             'name' =>'required|unique:categories'
         ]);
-
+        
+        $category= new category();
         Category::create($request->all());
 
-        return redirect()->route('category.create');
+        return redirect()->route('category.index');
     }
+
 
     /**
      * Display the specified resource.

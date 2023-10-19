@@ -21,7 +21,6 @@
                 </ul>
             </div>
 
-
             @endif
 
             <form action="{{ route('category.store') }}" method="POST">
